@@ -1,0 +1,165 @@
+.principal{
+  position: relative;
+  align-items: center;
+}
+.principal .painel{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+ 
+}
+.principal .painel .banners{
+  min-width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  filter: brightness(70%);
+ z-index: -1;
+ opacity: 0;
+ transition: 3s ease-in-out;
+}
+
+.principal .painel .titulo{
+  font-size: calc(3vw + 1em);
+  color: white;
+}
+.principal .painel .seta{
+  position: absolute;
+  background-image: url("../images/seta.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: 100%;
+   overflow: hidden;
+   width: 50px;
+   height: 50px;
+}
+
+.principal .painel .seta.btn-voltar{
+  left: 15px;
+  transform: rotateY(180deg);
+ 
+}
+
+.principal .painel .seta.btn-avancar{
+  right: 15px;
+}
+
+ @media only screen and (max-width: 650px){
+  .principal .painel{
+    height: 500px;
+  }
+  .icon-center{
+    margin-top: 489px;
+    width: 64px;
+
+  }
+} 
+
+
+.principal .painel .banner-1{
+background-image: url("../images/relogio.jpg");
+} 
+
+.principal .painel .banner-2{
+background-image: url("../images/camera.jpg");
+}
+
+.principal .painel .banner-3{
+  background-image: url("../images/bannerpreto.jpg"); 
+} 
+
+.principal .painel .banners.mostrar{
+  opacity: 1;
+}
+
+
+                 /* quem somos */
+.principal .ContainerQuemSomos{
+  height: 700px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.principal .ContainerQuemSomos .icon-center{
+  display: flex;
+  align-items: center;
+  filter: brightness(70%);
+  max-width: 25%;
+   }
+
+
+.principal .ContainerQuemSomos .descricacao{
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ max-width: 25%;
+ width: 400px;
+ font-family: "Public Sans" , sans-serif;
+} 
+.principal .ContainerQuemSomos .descricacao .titulo{
+ font-size: calc(1vw + 2em);
+ margin: 10px;
+ font-weight: 800;
+
+}
+.principal .ContainerQuemSomos .descricacao .paragrafo{
+ 
+}
+.principal .ContainerQuemSomos   .imagemQuemSomos{
+max-width: 50%;
+}
+
+@media only screen and (max-width: 1217px){
+  .principal .ContainerQuemSomos .icon-center{
+    display: none;
+  }
+  .principal .ContainerQuemSomos .descricacao .titulo{
+    font-size: calc(1vw + 1em)
+ 
+}
+
+  }
+  @media only screen and (max-width: 675px){
+    
+    .principal .ContainerQuemSomos{
+      display: flex;
+      height: 500px;
+      flex-direction: column;
+      align-items: center;
+      /* margin-bottom: 10px; */
+      max-width: 100%;
+      justify-content: flex-start;
+      
+    }
+    .principal .ContainerQuemSomos .descricacao .titulo{
+      font-size: calc(1vw + 2em);
+      margin: 50px 0px 50px 0px  ;
+    }
+    .principal .ContainerQuemSomos .descricacao .paragrafo{
+      padding: 15px;
+    }
+    .principal .ContainerQuemSomos   .icon-center{
+      display: flex;
+      position: absolute;
+      margin-top: -31px;
+      width: 64px;
+    }
+    .principal .ContainerQuemSomos   .imagemQuemSomos{
+      
+      /* margin-top: -50px; */
+      /* border-bottom: 1px solid black; */
+      /* padding-bottom: 50px; */
+    
+    }
+    .principal .ContainerQuemSomos .descricacao{
+     max-width: 100%;
+      
+    }
+  }
+ 
